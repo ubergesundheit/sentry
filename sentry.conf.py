@@ -30,6 +30,7 @@ DATABASES = {
     }
 }
 
+SENTRY_CACHE = 'sentry.cache.redis.RedisCache'
 SENTRY_REDIS_OPTIONS = {
     'hosts': {
         0: {
