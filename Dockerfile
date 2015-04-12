@@ -6,7 +6,7 @@ RUN apt-get -qq update && DEBIAN_FRONTEND=noninteractive \
     apt-get install -y libxslt1-dev libxml2-dev
 #                      libpq-dev expect libldap2-dev libsasl2-dev libssl-dev
 
-RUN pip install -U sentry[postgres] sentry-slack
+RUN pip install -U sentry[postgres]
 
 EXPOSE 8080
 
